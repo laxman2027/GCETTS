@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - GCETTS</title>
+    <link rel="stylesheet" href="Colleg Project.css">
+    <style>
+        body {
+            background-color: #136487; /* Light grey background for a professional look */
+            font-family: Arial, sans-serif;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            animation: fadeIn 2s ease-in-out;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container input[type="number"],
+        .form-container input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #2d869c;
+            opacity: 0.5;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+        }
+        .form-container input[type="submit"] {
+            width: 90%;
+            padding: 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            animation: pulse 2s infinite;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: rgb(0, 107, 9);
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        footer {
+            padding: 10px;
+            text-align: center;
+            color: rgb(10, 10, 10);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 50px; text-align: center;"> Government College of Engineering & Textile Technology </h1>
+    </header>
+    <b> 
+    </b>
+    <img src="GCETTS.jpg" alt="GCETTS 🏫" class="center" height="100" width="100" style="padding: 0cm; border-radius: 50%;">
+    
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form action="index.php" method="post">
+            <label for="username"><b>Username</b></label>
+            <input type="number" id="username" name="username" required>
+            <label for="password"><b>Password</b></label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+           <input type="submit" value="Sign Up">
+           <br><br>
+           <label>I have an account </label>
+           <a href="login page.html" style="color: rgb(0, 0, 0);">
+            <b> Log in here</b> </a>
+        </form>
+    </div>
+    <footer>
+        <!-- Add footer content here -->
+        <p>Built By Laxman mal.</p>
+    </footer>
+</body>
+</html>
